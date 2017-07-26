@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <title>The Journey to the Center of the Earth | Jules Verne | Lit2Go ETC</title>
+    <link rel="image_src" href="http://fcit.usf.edu/socialmedia/lit2go.jpg">
+    <link rel="stylesheet" href="http://etc.usf.edu/lit2go/css/screenless.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="http://etc.usf.edu/lit2go/css/printless.css" type="text/css" media="print" title="no title" charset="utf-8">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" defer src="http://etc.usf.edu/lit2go/js/js.min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5574891-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      $(document).ready(function() {
+        $('img').unveil();
+        $('#contactable').contactable({
+          url: 'http://etc.usf.edu/lit2go/welcome/feedback/',
+          subject: 'Lit2Go Feedback — The Journey to the Center of the Earth | Jules Verne — http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/'
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="page">      <header>
+        <h1>
+          <a href="http://etc.usf.edu/lit2go/">Lit<span class="blue">2</span>Go</a>
+        </h1>
+        <ul>
+          <li id="search"><form action="http://etc.usf.edu/lit2go/search/"><input type="text" name="q" placeholder="Search" value=""></form></li>
+        </ul>
+      </header>
+      <nav id="shell">
+        <ul>
+          <li><a href="http://etc.usf.edu/lit2go/authors/" class="">Authors</a></li>
+          <li><a href="http://etc.usf.edu/lit2go/books/" class="selected">Books</a></li>
+          <li><a href="http://etc.usf.edu/lit2go/genres/" class="">Genres</a></li>
+          <li><a href="http://etc.usf.edu/lit2go/collections/" class="">Collections</a></li>
+          <li><a href="http://etc.usf.edu/lit2go/readability/" class="">Readability</a></li>
+        </ul>
+      </nav>
+      <section id="content">
+        <div id="contactable"><!-- contactable html placeholder --></div>
+                        <div id="page_content">
+  <header>  
+    <h2>
+      The Journey to the Center of the Earth    </h2>
+    <h3>
+      by <a href="http://etc.usf.edu/lit2go/authors/118/jules-verne/">Jules Verne</a>
+    </h3>
+  </header>
+  <!--Two different page images for testing-->
+  <!--<div id="page_image">
+    <img src="http://etc.usf.edu/clipart/21100/21137/alice9_21137_lg.gif" alt="A scene from the story, Alice in Wonderland.">
+    </div>-->
+  <div id="column_primary">
+    <div id="page_thumbnail">
+      <img height="150" width="150" src="http://etc.usf.edu/lit2go/static/thumbnails/books/222.png" alt="The Journey to the Center of the Earth">
+    </div>
+    <p>
+      <p>
+        Originally published in French in 1864, the first English translation of this classic of adventure and science fiction was published in 1871. The book describes the journey of a scientist, his nephew, and their guide through the Earth&#39;s interior by way of volcanic tubes. Along the way, they encounter various threats and wonders, seeing evidence of earlier stages in the planet&#39;s development.</p>    </p>
+    <p>
+      <strong>Source:</strong>
+      Verne, J. (1871) A Journey to the Center of the Earth (Frederick Amadeus Malleson, Trans.) London: Ward, Lock, &Co., Ltd. (Original work published 1864)    </p>
+    <dl>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5648/preface/">PREFACE</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5649/chapter-i-the-professor-and-his-family/">CHAPTER I. THE PROFESSOR AND HIS FAMILY</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5650/chapter-ii-a-mystery-to-be-solved-at-any-price/">Chapter II. A MYSTERY TO BE SOLVED AT ANY PRICE</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5651/chapter-iii-the-runic-writing-exercises-the-professor/">Chapter III. THE RUNIC WRITING EXERCISES THE PROFESSOR</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5652/chapter-iv-the-enemy-to-be-starved-into-submission/">Chapter IV. THE ENEMY TO BE STARVED INTO SUBMISSION</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5653/chapter-v-famine-then-victory-followed-by-dismay/">Chapter V. FAMINE, THEN VICTORY, FOLLOWED BY DISMAY</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5654/chapter-vi-exciting-discussions-about-an-unparalleled-enterprise/">Chapter VI. EXCITING DISCUSSIONS ABOUT AN UNPARALLELED ENTERPRISE</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5655/chapter-vii-a-womans-courage/">Chapter VII. A WOMAN'S COURAGE</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5656/chapter-viii-serious-preparations-for-vertical-descent/">Chapter VIII. SERIOUS PREPARATIONS FOR VERTICAL DESCENT</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5657/chapter-ix-iceland-but-what-next/">Chapter IX. ICELAND! BUT WHAT NEXT?</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5658/chapter-x-interesting-conversations-with-icelandic-savants/">CHAPTER X. INTERESTING CONVERSATIONS WITH ICELANDIC SAVANTS</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5659/chapter-xi-a-guide-found-to-the-centre-of-the-earth/">Chapter XI. A GUIDE FOUND TO THE CENTRE OF THE EARTH</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5660/chapter-xii-a-barren-land/">Chapter XII. A BARREN LAND</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5661/chapter-xiii-hospitality-under-the-arctic-circle/">Chapter XIII. HOSPITALITY UNDER THE ARCTIC CIRCLE</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5662/chapter-xiv-but-arctics-can-be-inhospitable-too/">Chapter XIV. BUT ARCTICS CAN BE INHOSPITABLE, TOO</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5663/chapter-xv-snaefell-at-last/">Chapter XV. SNÆFELL AT LAST</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5664/chapter-xvi-boldly-down-the-crater/">Chapter XVI. BOLDLY DOWN THE CRATER</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5665/chapter-xvii-vertical-descent/">CHAPTER XVII. VERTICAL DESCENT</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5666/chapter-xviii-the-wonders-of-terrestrial-depths/">Chapter XVIII. THE WONDERS OF TERRESTRIAL DEPTHS</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5667/chapter-xix-geological-studies-in-situ/">Chapter XIX. GEOLOGICAL STUDIES IN SITU</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5668/chapter-xx-the-first-signs-of-distress/">Chapter XX. THE FIRST SIGNS OF DISTRESS</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5669/chapter-xxi-compassion-fuses-the-professors-heart/">Chapter XXI. COMPASSION FUSES THE PROFESSOR'S HEART</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5670/chapter-xxii-total-failure-of-water/">Chapter XXII. TOTAL FAILURE OF WATER</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5671/chapter-xxiii-water-discovered/">Chapter XXIII. WATER DISCOVERED</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5672/chapter-xxiv-well-said-old-mole-canst-thou-work-i-the-ground-so-fast/">Chapter XXIV. WELL SAID, OLD MOLE! CANST THOU WORK I' THE GROUND SO FAST?</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5673/chapter-xxv-de-profundis/">Chapter XXV. DE PROFUNDIS</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5674/chapter-xxvi-the-worst-peril-of-all/">Chapter XXVI. THE WORST PERIL OF ALL</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5675/chapter-xxvii-lost-in-the-bowels-of-the-earth/">Chapter XXVII. LOST IN THE BOWELS OF THE EARTH</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5676/chapter-xxviii-the-rescue-in-the-whispering-gallery/">Chapter XXVIII. THE RESCUE IN THE WHISPERING GALLERY</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5677/chapter-xxix-thalatta-thalatta/">Chapter XXIX. THALATTA! THALATTA!</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5678/chapter-xxx-a-new-mare-internum/">Chapter XXX. A NEW MARE INTERNUM</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5679/chapter-xxxi-preparations-for-a-voyage-of-discovery/">Chapter XXXI. PREPARATIONS FOR A VOYAGE OF DISCOVERY</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5680/chapter-xxxii-wonders-of-the-deep/">Chapter XXXII. WONDERS OF THE DEEP</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5681/chapter-xxxiii-a-battle-of-monsters/">Chapter XXXIII. A BATTLE OF MONSTERS</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5682/chapter-xxxiv-the-great-geyser/">Chapter XXXIV. THE GREAT GEYSER</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5683/chapter-xxxv-an-electric-storm/">Chapter XXXV. AN ELECTRIC STORM</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5684/chapter-xxxvi-calm-philosophic-discussions/">CHAPTER XXXVI. CALM PHILOSOPHIC DISCUSSIONS</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5685/chapter-xxxvii-the-liedenbrock-museum-of-geology/">CHAPTER XXXVII. THE LIEDENBROCK MUSEUM OF GEOLOGY</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5686/chapter-xxxviii-the-professor-in-his-chair-again/">CHAPTER XXXVIII. THE PROFESSOR IN HIS CHAIR AGAIN</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5687/chapter-xxxix-forest-scenery-illuminated-by-eletricity/">CHAPTER XXXIX. FOREST SCENERY ILLUMINATED BY ELETRICITY</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5688/chapter-xl-preparations-for-blasting-a-passage-to-the-centre-of-the-earth/">CHAPTER XL. PREPARATIONS FOR BLASTING A PASSAGE TO THE CENTRE OF THE EARTH</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5689/chapter-xli-the-great-explosion-and-the-rush-down-below/">CHAPTER XLI. THE GREAT EXPLOSION AND THE RUSH DOWN BELOW</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5690/chapter-xlii-headlong-speed-upward-through-the-horrors-of-darkness/">CHAPTER XLII. HEADLONG SPEED UPWARD THROUGH THE HORRORS OF DARKNESS</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5691/chapter-xliii-shot-out-of-a-volcano-at-last/">CHAPTER XLIII. SHOT OUT OF A VOLCANO AT LAST!</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5692/chapter-xliv-sunny-lands-in-the-blue-mediterranean/">CHAPTER XLIV. SUNNY LANDS IN THE BLUE MEDITERRANEAN</a>
+      </dt>
+      <dd>
+              </dd>
+            <dt>
+        <a href="http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/5693/chapter-xlv-alls-well-that-ends-well/">CHAPTER XLV. ALL'S WELL THAT ENDS WELL</a>
+      </dt>
+      <dd>
+              </dd>
+          </dl>
+  </div>
+  <div id="column_secondary">
+  <ul>    
+    <div>
+      <li>
+        <strong>Year Published:</strong>
+        1871      </li>
+      <li>
+        <strong>Language:</strong>
+        English      </li>
+      <li>
+        <strong>Country of Origin:</strong>
+        France      </li>
+    </div>
+    <div>
+      <li>
+        <strong>Readability:</strong>
+        <ul>
+          <li>
+            Flesch–Kincaid Level:
+            <a href="http://etc.usf.edu/lit2go/readability/flesch_kincaid_grade_level/6/" title="Flesch–Kincaid Grade Level 6.0">6.0</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Word Count:</strong>
+        76,516      </li>
+    </div>
+    <div>
+      <li>
+        <strong>Genre:</strong>
+        <a href="http://etc.usf.edu/lit2go/genres/2/adventure/">Adventure</a>
+      </li>
+          </div>
+    <div>
+      <li>
+        <a class="btn" data-toggle="modal" href="#cite_this" >✎ Cite This</a>
+      </li>
+      <li>
+        <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+  <a addthis:ui_delay="500" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=roywinkelman" class="addthis_button_compact">Share</a>
+  <span class="addthis_separator">|</span>
+  <a class="addthis_button_preferred_1"></a>
+  <a class="addthis_button_preferred_2"></a>
+  <a class="addthis_button_preferred_3"></a>
+  <a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript">$($.getScript("http://s7.addthis.com/js/250/addthis_widget.js?pub=roywinkelman"))</script>
+<!-- <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=roywinkelman"></script> -->
+<!-- AddThis Button END -->
+      </li>
+            <li>
+        <a href="itms://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=384523575">Available on <span class="itunes_u">iTunes&nbsp;U</span></a>
+      </li>
+          </div>
+  </ul>
+  </div>
+</div>
+
+<div class="modal hide" id="cite_this">
+  <script>
+    $('#myTab a').click(function (e) {
+      e.preventDefault();
+      $('#myTab a[href="#apa"]').tab('show');
+    })
+  </script>
+  
+  <nav>
+    <ul id="myTab">
+      <li class="active">
+        <a href="#apa" data-toggle="tab">APA</a>
+      </li>
+      <li>
+        <a href="#mla" data-toggle="tab">MLA</a>
+      </li>
+      <li>
+        <a href="#chicago" data-toggle="tab">Chicago</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="tab-content">          
+    <div class="content tab-pane hide active" id="apa">
+      <p class="citation">
+        Verne, J. (1871). <em>The Journey to the Center of the Earth</em>. (Lit2Go ed.). Retrieved July 25, 2017, from <span class="faux_link">http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/</span>
+      </p>
+    </div>
+    <div class="content tab-pane" id="mla">
+      <p class="citation">
+        Verne, Jules. <em>The Journey to the Center of the Earth</em>. Lit2Go Edition. 1871. Web. <<span class="faux_link">http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/</span>>. July 25, 2017.
+      </p>
+    </div>
+    <div class="content tab-pane" id="chicago">
+      <p class="citation">
+        Jules Verne, <em>The Journey to the Center of the Earth</em>, Li2Go edition, (1871), accessed July 25, 2017, <span class="faux_link">http://etc.usf.edu/lit2go/222/the-journey-to-the-center-of-the-earth/</span>.
+      </p>
+    </div>
+  </div>
+</div>
+
+      </section>
+      <footer screen>
+        <div id="footer-text">
+          <p>
+            This collection of children's literature is a part of the <a href="http://etc.usf.edu/">Educational Technology Clearinghouse</a> and is funded by various <a href="http://etc.usf.edu/lit2go/welcome/funding/">grants</a>.
+          </p>
+          <p>
+            Copyright &copy; 2006&mdash;2017 by the <a href="http://fcit.usf.edu/">Florida Center for Instructional Technology</a>, <a href="http://www.coedu.usf.edu/">College of Education</a>, <a href="http://www.usf.edu/">University of South Florida</a>.
+          </p>
+        </div>
+        <ul id="footer-links">
+          <li><a href="http://etc.usf.edu/lit2go/welcome/license/">License</a></li>
+          <li><a href="http://etc.usf.edu/lit2go/welcome/credits/">Credits</a></li>
+          <li><a href="http://etc.usf.edu/lit2go/welcome/faq/">FAQ</a></li>
+          <li><a href="http://etc.usf.edu/lit2go/giving/">Giving</a></li>
+        </ul>
+      </footer>
+            <script type="text/javascript" defer src="http://etc.usf.edu/lit2go/js/details.js"></script>
+    </div>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d29023a45b","applicationID":"2059142","transactionName":"ZVMHYUFRXEYHAUYPX1wZJFZHWV1bSSBdCVtBGQdMbFlW","queueTime":0,"applicationTime":417,"atts":"SRQEFwlLT0g=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
