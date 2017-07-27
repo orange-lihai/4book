@@ -1,7 +1,8 @@
 #! /usr/bin/python
 #! -*- encoding: utf-8 -*-
 
-import datetime, time, os
+import datetime, time, os, json
+from jsonweb.encode import to_object, dumper
 from glob import glob
 # '%Y-%m-%d %H:%M:%S'
 import xlwt
@@ -9,6 +10,18 @@ import xlwt
 BASE_DIR = os.path.dirname(__file__)
 LOG_DIR = os.path.join(BASE_DIR, '../logs/')
 OUTPUT_DIR = os.path.join(BASE_DIR, '../output/')
+
+class CJsonEncoder(json.JSONEncoder):
+    def default(self, obj):
+        try:
+            if isinstance(obj, datetime):
+                return obj.strftime('%Y-%m-%d %H:%M:%S')
+            elif isinstance(obj, date):
+                return obj.strftime('%Y-%m-%d')
+            else:
+                return json.JSONEncoder.default(self, obj)
+        except:
+            return str(obj)
 
 def timestr4suffix():
     return time.strftime('%Y_%m_%d_%H_%M_%S', time.localtime(time.time()))
@@ -70,7 +83,10 @@ def save2txt(file_name = 'rs.txt', rs = []):
     file_name = OUTPUT_DIR + file_name
     with open(name=file_name, mode='w', buffering=1024) as f:
         for r in rs:
-            f.write(r)
+            if isinstance(r, str):
+                f.write(r)
+            else:
+                f.write(dumper(r))
             f.write('\n')
             
 def append2txt(file_name = 'rs.txt', rs = []):
